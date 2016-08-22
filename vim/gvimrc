@@ -1,0 +1,39 @@
+let g:airline_theme='solarized'
+
+" http://stackoverflow.com/a/1448637/1069001
+autocmd VimEnter * NERDTreeTabsOpen
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
+set listchars +=trail:·
+set listchars +=tab:‣·
+
+set guifont=Menlo:h14
+
+set background=light
+colorscheme solarized
+
+
+noremap <silent> <leader>t :NERDTreeTabsToggle<cr>
+noremap <silent> <D-J> :NERDTreeFind<cr>
+
+noremap <D-k> :!make clean<cr>
+noremap <D-r> :!./%<cr>
+
+wincmd w
+
+set foldcolumn=3
+set foldmethod=syntax
+set foldlevel=1
+set foldnestmax=2
+
+" Some tuning to allow dragging files to the dock icon in os x
+function! ReloadFile()
+   if exists("%")
+       edit
+       NERDTree %
+   endif
+endfunction
+
+
+call ReloadFile()

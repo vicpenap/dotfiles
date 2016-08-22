@@ -1,0 +1,114 @@
+set background=dark
+
+let mapleader="["
+
+syntax enable
+
+" Shows linenumbers
+set number
+
+"Fix some movements
+noremap j gj
+noremap <Down> gj
+noremap k gk
+noremap <Up> gk
+
+" Number of screen lines above and below the cursor
+set scrolloff=5
+
+" Maps tab key to split cycling
+noremap <S-Tab> <C-w>W
+noremap <Tab> <C-w>w
+
+" Shows cursor line
+set cursorline
+
+" Some tabs adjustments
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Some search tunning
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Shows invisible characters
+set listchars -=eol:$
+set list
+
+" backspace will clear search highlighting
+noremap <silent> <backspace> :nohlsearch<cr>
+
+" relative number of line
+noremap <silent> ª :set relativenumber<cr>
+noremap <silent> º :set number<cr>
+noremap <silent> ºº :set number<cr>:set nonumber<cr>
+
+
+" writing report mode
+" distraction-free screen
+" clear colorscheme
+" no syntax highlighting
+" no line numbers
+" line breaks
+noremap <silent> !! :NERDTreeClose<cr>:colorscheme focus<cr>:syntax off<cr>:set nonumber<cr>:set wrap linebreak nolist<cr>:set guioptions-=r<cr>:set guioptions-=L<cr>:set scrolloff=999<cr>zz
+noremap <leader>c :set columns=120<cr>
+noremap <leader>cc :set columns=9999<cr>
+map <silent> !!! !!<esc><leader>c
+
+" some shortcuts
+noremap <leader>b :ls<cr>
+noremap <leader>r :registers<cr>
+
+" spell checking
+noremap <leader>s :set spell<cr>:set spelllang=en_US<cr>
+noremap <leader>sg :set spell<cr>:set spelllang=gl<cr>
+
+" autocompletion
+set wildmode=longest,list,full
+set wildmenu
+imap <silent> <c-space> <c-p>
+
+" switching between normal and insert mode cursors
+if exists('$TMUX')
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+
+" vundle stuff
+
+set clipboard=unnamed
+
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+filetype plugin indent on     " required!
+
+
+Bundle 'surround.vim'
+
+Bundle 'The-NERD-tree'
+
+" http://stackoverflow.com/a/5818335/1069001
+let NERDTreeChDirMode=2
+
+Bundle 'jistr/vim-nerdtree-tabs'
+let g:nerdtree_tabs_open_on_gui_startup=1
+
+Bundle 'ctrlp.vim'
+
+Bundle 'bling/vim-airline'
+
+Bundle 'easymotion'
+
