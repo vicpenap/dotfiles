@@ -8,8 +8,6 @@
 --------------------------------------------------------------------------------
 -- Window management
 
-local windowHyper = {"cmd", "shift"}
-
 -- Return screen frame available for window placement
 function currentScreenFrame()
     return hs.screen.mainScreen():frame()
@@ -71,6 +69,8 @@ function windowBottom()
     return frame
 end
 
+local windowHyper = {"cmd", "shift"}
+
 hs.hotkey.bind(windowHyper, "1", function()
     hs.window.focusedWindow():setFrame(windowOneThirdLeft(), 0)
 end)
@@ -91,19 +91,21 @@ hs.hotkey.bind(windowHyper, "0", function()
     hs.window.focusedWindow():setFrame(windowOneThirdRight(), 0)
 end)
 
-hs.hotkey.bind(windowHyper, "Right", function()
+local halvesWindowHyper = {"cmd", "alt", "shift"}
+
+hs.hotkey.bind(halvesWindowHyper, "Right", function()
     hs.window.focusedWindow():setFrame(windowRight(), 0)
 end)
 
-hs.hotkey.bind(windowHyper, "Left", function()
+hs.hotkey.bind(halvesWindowHyper, "Left", function()
     hs.window.focusedWindow():setFrame(windowLeft(), 0)
 end)
 
-hs.hotkey.bind(windowHyper, "Up", function()
+hs.hotkey.bind(halvesWindowHyper, "Up", function()
     hs.window.focusedWindow():setFrame(windowTop(), 0)
 end)
 
-hs.hotkey.bind(windowHyper, "Down", function()
+hs.hotkey.bind(halvesWindowHyper, "Down", function()
     hs.window.focusedWindow():setFrame(windowBottom(), 0)
 end)
 
