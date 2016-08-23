@@ -1,0 +1,23 @@
+[user]
+    email = vicpenap@gmail.com
+    name = Victor Pena
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = /usr/bin/vim
+[alias]
+    b=branch
+    st=status
+    co=checkout
+    ci=commit
+    lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(bold cyan)%aD (%cr) %C(bold green)<%an>%Creset%n'' %s%n' --abbrev-commit
+[push]
+    default = upstream
+[branch]
+    automerge = false
+[merge]
+    tool = p4mergetool
+[mergetool "p4mergetool"]
+    cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$LOCAL $PWD/$REMOTE $PWD/$MERGED
+    trustExitCode = false
+[mergetool]
+    keepBackup = false
