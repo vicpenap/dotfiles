@@ -79,22 +79,7 @@ w() {
     open $dir/$space
 }
 
-
-
-alias s='sudo $(fc -ln -1)'
-
 export LANG=en_US.UTF-8
-
-pi() {
-    project_folder="."
-    if [[ -n ${1+x} ]]; then
-        project_folder="./"$1
-    fi
-    current_dir=$(pwd)
-    cd $project_folder
-    PROJECT_PATH="~/code/git_izmir" pod install
-    cd $current_dir
-}
 
 alias be="bundle exec"
 
@@ -105,7 +90,5 @@ pdf() {
     pandoc -V fontsize=12pt -o $1.pdf $1
     open $1.pdf
 }
-
-alias iz='sh izmir-install.sh'
 
 alias weather='curl wttr.in'
