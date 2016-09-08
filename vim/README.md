@@ -4,6 +4,7 @@ Create symlinks:
     ln -s ~/dotfiles/vim/gvimrc ~/.gvimrc
     mkdir -p ~/.vim
     ln -s ~/dotfiles/vim/colors ~/.vim/colors
+    ln -s ~/dotfiles/vim/ideavimrc ~/.ideavimrc
 
 Download vundle:
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
