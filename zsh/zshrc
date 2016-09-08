@@ -43,8 +43,6 @@ EDITOR=vim
 VISUAL=vim
 GIT_EDITOR=vim
 
-PATH=/usr/local/bin:~/dev/android-sdk-macosx/platform-tools:$PATH
-
 __git_files () { 
     _wanted files expl 'local files' _files     
 }
@@ -90,5 +88,3 @@ pdf() {
     pandoc -V fontsize=12pt -o $1.pdf $1
     open $1.pdf
 }
-
-alias weather='curl wttr.in'
