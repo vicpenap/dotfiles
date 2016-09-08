@@ -109,6 +109,15 @@ hs.hotkey.bind(halvesWindowHyper, "Down", function()
     hs.window.focusedWindow():setFrame(windowBottom(), 0)
 end)
 
+hs.hints.showTitleThresh = 0
+
+hs.hotkey.bind("alt", "tab", function()
+    hs.hints.windowHints()
+end)
+
+
+
+
 --------------------------------------------------------------------------------
 -- Screen management
 
@@ -120,6 +129,14 @@ end)
 
 hs.hotkey.bind(screenHyper, "Left", function()
     hs.window.focusedWindow():moveOneScreenWest(0)
+end)
+
+hs.hotkey.bind(screenHyper, "Up", function()
+    hs.window.focusedWindow():moveOneScreenNorth(0)
+end)
+
+hs.hotkey.bind(screenHyper, "Down", function()
+    hs.window.focusedWindow():moveOneScreenSouth(0)
 end)
 
 --------------------------------------------------------------------------------
