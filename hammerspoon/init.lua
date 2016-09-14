@@ -171,7 +171,7 @@ hs.hotkey.bind(audioHyper, "Down", function()
 end)
 
 hs.hotkey.bind(audioHyper, "0", function()
-    hs.execute('killall "Hosting AU"; open ~/dotfiles/hosting_au/dac_screen.hosting')
+    hs.execute('killall "Hosting AU"; open ~/dotfiles/hosting_au/sennheiser.hosting')
 end)
 
 
