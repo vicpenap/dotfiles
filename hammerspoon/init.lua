@@ -175,13 +175,46 @@ hs.hotkey.bind(audioHyper, "0", function()
 end)
 
 
+--------------------------------------------------------------------------------
+-- Custom actions
 
+function debugU()
+    local application = hs.application.frontmostApplication()
+    if (application:name() == "AppCode") then
+        hs.eventtap.keyStroke({"alt", "cmd"}, "u")
+        hs.eventtap.keyStrokes("no_leaks")
+        hs.eventtap.keyStroke({}, "padenter")
+    end
+end
 
+function testU()
+    local application = hs.application.frontmostApplication()
+    if (application:name() == "AppCode") then
+        hs.eventtap.keyStroke({"alt", "cmd"}, "u")
+        hs.eventtap.keyStrokes("ptests")
+        hs.eventtap.keyStroke({}, "padenter")
+    end
+end
 
+function customLocation()
+    local application = hs.application.frontmostApplication()
+    if (application:name() == "Simulator") then
+        hs.eventtap.keyStroke({"alt", "cmd"}, "n")
+        hs.eventtap.keyStroke({"alt", "cmd"}, "l")
+    end
+end
 
+hs.hotkey.bind({"cmd"}, "r", function()
+    debugU() -- debug no leaks
+end)
 
+hs.hotkey.bind({"cmd"}, "i", function()
+    testU() -- debug tests
+end)
 
-
+hs.hotkey.bind({"shift", "cmd"}, "u", function()
+    customLocation() -- input custom location
+end)
 
 
 
