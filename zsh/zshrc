@@ -90,3 +90,5 @@ pdf() {
     pandoc -V fontsize=12pt -o $1.pdf $1
     open $1.pdf
 }
+
+alias ksdiff=/Applications/p4merge.app/Contents/Resources/launchp4merge
