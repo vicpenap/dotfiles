@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Num EQ Bands</key>
+	<integer>31</integer>
+	<key>data</key>
+	<data>
+	AAAAAAAAAAAAAAAgAAAAAD9hEQAAAAABQBBEQAAAAAJAYiIoAAAAA0ATjjYAAAAEQEaI
+	hQAAAAVAH//1AAAABj+EREQAAAAHP6LBagAAAAg/K44TAAAACT8MFqAAAAAKAAAAAAAA
+	AAu+v0oAAAAADL+gFrcAAAANv0oiDgAAAA6/mBa8AAAAD7+gzMwAAAAQv7T6TAAAABG/
+	pwW8AAAAEgAAAAAAAAATvgFr3AAAABQ+Ok+kAAAAFT6/pQAAAAAWP4y2EAAAABc/pLYs
+	AAAAGD9uZpUAAAAZP/Xd/AAAABo/OzMzAAAAGz7AtmYAAAAcvjYLNAAAAB2/CIiAAAAA
+	Hr8IiIAAACcQP4AAAA==
+	</data>
+	<key>manufacturer</key>
+	<integer>1634758764</integer>
+	<key>name</key>
+	<string>tromboranga</string>
+	<key>subtype</key>
+	<integer>1735550321</integer>
+	<key>type</key>
+	<integer>1635083896</integer>
+	<key>version</key>
+	<integer>0</integer>
+</dict>
+</plist>

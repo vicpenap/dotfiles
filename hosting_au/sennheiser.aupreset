@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Num EQ Bands</key>
+	<integer>31</integer>
+	<key>data</key>
+	<data>
+	AAAAAAAAAAAAAAAgAAAAAD9hEQAAAAABQBBEQAAAAAJAYiIoAAAAA0ATjjYAAAAEQBOO
+	NgAAAAU/2gtLAAAABj+DYKsAAAAHP1k+lAAAAAg+fSdQAAAACT9ru6AAAAAKPr9KAAAA
+	AAsAAAAAAAAADL7sFsAAAAANAAAAAAAAAA6+zBbUAAAAD77u7xQAAAAQvx/SigAAABG/
+	A+lqAAAAEr6pPpQAAAATvqmZgAAAABS8u7wAAAAAFT4tgtwAAAAWP2T6WAAAABc/gjjs
+	AAAAGL7tJ4oAAAAZvrxxeAAAABq/x2DAAAAAG7/0zMAAAAAcwB3d4AAAAB3AQAAAAAAA
+	HsBAAAAAACcQP4AAAA==
+	</data>
+	<key>manufacturer</key>
+	<integer>1634758764</integer>
+	<key>name</key>
+	<string>sennheiser</string>
+	<key>subtype</key>
+	<integer>1735550321</integer>
+	<key>type</key>
+	<integer>1635083896</integer>
+	<key>version</key>
+	<integer>0</integer>
+</dict>
+</plist>
