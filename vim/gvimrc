@@ -19,6 +19,8 @@ noremap <D-r> :!./%<cr>
 
 wincmd w
 
+autocmd BufEnter * lcd %:p:h
+
 set foldcolumn=3
 set foldmethod=syntax
 set foldlevel=1

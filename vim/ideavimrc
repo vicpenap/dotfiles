@@ -7,5 +7,7 @@ set ignorecase
 set smartcase
 set showmode
 
+set surround
+
 noremap <silent> <backspace> :nohlsearch<cr>
 
