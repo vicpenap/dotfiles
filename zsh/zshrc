@@ -90,3 +90,6 @@ pdf() {
 }
 
 alias ksdiff=/Applications/p4merge.app/Contents/Resources/launchp4merge
+alias grom="g rebase origin/master"
+alias fgrom="g fetch -p; grom"
+
