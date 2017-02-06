@@ -1,11 +1,10 @@
 set ignorecase
 nmap H :xhelp<cr>
-nmap D :xccmd jumpToDefinition<cr>
 nmap U eb3~e
-imap <C-p> <Esc>de:xccmd complete<cr>i
+imap <C-p><Esc>:xccmd complete<cr>i
 nmap M :xccmd balance<cr>kVj%
-imap <S-cr> <Esc>A];<Esc>
-nmap <S-cr> A];<Esc>
-set pasteboard
+// imap <S-cr> <Esc>A];<Esc>
+// nmap <S-cr> A];<Esc>
+set clipboard=unnamed
 nmap | O///
 nmap \ o///
