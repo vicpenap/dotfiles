@@ -29,7 +29,7 @@ ZSH_THEME="blinks-asou"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew git git-flow github heroku command-coloring osx)
+plugins=(brew gitfast git-flow github heroku command-coloring osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,8 +43,8 @@ EDITOR=vim
 VISUAL=vim
 GIT_EDITOR=vim
 
-__git_files () { 
-    _wanted files expl 'local files' _files     
+__git_files () {
+    _wanted files expl 'local files' _files
 }
 
 # kudos to dvor
