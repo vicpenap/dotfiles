@@ -89,7 +89,10 @@ pdf() {
     open $1.pdf
 }
 
-alias ksdiff=/Applications/p4merge.app/Contents/Resources/launchp4merge
+ksdiff()
+{
+    compare "$1" "$2" png:- | montage -geometry +4+4 -label "reference" "$1" -label "diff" - -label "failed" "$2" png:- | open -f -a Preview
+}
 alias grom="g rebase origin/master"
-alias fgrom="g fetch -p; grom"
+alias gfrom="g fetch -p; grom"
 
