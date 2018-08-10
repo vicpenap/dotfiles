@@ -109,15 +109,6 @@ hs.hotkey.bind(halvesWindowHyper, "Down", function()
     hs.window.focusedWindow():setFrame(windowBottom(), 0)
 end)
 
-hs.hints.showTitleThresh = 0
-
-hs.hotkey.bind("alt", "tab", function()
-    hs.hints.windowHints()
-end)
-
-
-
-
 --------------------------------------------------------------------------------
 -- Screen management
 
